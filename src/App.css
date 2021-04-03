@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto + Condensado: wght @ 300 & display = swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-blue: #00BFFF;
+  --primary-hover-blue: #03A6DC;
+  --primary-dark: rgb(255, 255, 255, 0);
+  --primary-black: #000;
+  --primary-gray: #B9B9C8;
+}
+
+body {
+  font-family: "Roboto Condesed", sans-serif;
+  
+}
+/*************************** NAVBAR ***********************************/
+
+nav {
+  z-index: 2;
+}
+.logo {
+  width: 10rem;
+}
+
+/*--------------- MENU LINKS ----------------*/
+
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+nav ul li {
+  text-transform: uppercase ;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-collapse .collapse.show{
+  color: #03A6DC;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  padding-top: 0.9rem !important;
+  height: 6rem !important;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+    padding-top: 0 !important;
+  }
+}
+
+.navbar {
+  height: 5rem !important;
+}
+
+.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus{
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+
+/*************************** Header ***********************************/
+
+.header-wraper{
+  position: relative;
+  background: url(altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 87.2vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-shadow: 3px 2px 7px black;
+  z-index: 2;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*--------------- TYPED TEXT ----------------*/
+
+.typed-text {
+  font-size: 1.5rem;
+  color: var(--primary-gray);
+  z-index: 2;  
+}
+
+@media(max-width: 768px) {
+  .typed-text {
+    font-size: 1rem !important;
+  }
+}
+
+/*--------------- HEADER MAIN OFFER BUTTON ----------------*/
+
+.btn.btn-secondary {
+  
+  text-transform: uppercase;
+  border-radius: 1rem;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  margin: 2rem;
+  z-index: 2;
+}
+
+.btn.btn-secondary:hover {
+  background-color: var(--primary-hover-blue);
+  color: var(--primary-white);
+  border: 0.1px solid var(--primary-blue);
+}
+
+/*--------------- PARTICLES JS ----------------*/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
