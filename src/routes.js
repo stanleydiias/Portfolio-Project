@@ -2,8 +2,8 @@ import React from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 import Main from './pages/Main'
-import AboutMe from './pages/About-me'
 import Contact from './pages/Contact'
+import HeaderAbout from './pages/About-me/HeaderAbout'
 
 const Routes = () => {
     return (
@@ -11,7 +11,7 @@ const Routes = () => {
         <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/contact" component={Contact} />
-            <Route path="/about-me" component={AboutMe} />
+            
         </Switch>
         </BrowserRouter>
     )

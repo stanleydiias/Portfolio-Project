@@ -76,10 +76,31 @@ nav ul li {
 
 .header-wraper{
   position: relative;
-  background: url(altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat;
+  background: url(altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat fixed;
   background-size: cover;
   background-position: center;
   height: 87.2vh;
+}
+
+.header-about {
+  position: relative;
+  background: url(altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  height: 105vh;
+}
+
+.main-about {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-info{
