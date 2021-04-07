@@ -10,16 +10,16 @@ const Navbar = () => {
             <div className="container">
                 <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo..." /></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} style={{color: "#fff"}} />
+                    <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">about me</a>
+                            <a className="nav-link" href="about-me">about me</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">services</a>
@@ -31,7 +31,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#">portfolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">contact</a>
+                            <a className="nav-link" href="contact">contact</a>
                         </li>
 
                     </ul>

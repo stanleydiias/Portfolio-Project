@@ -1,14 +1,15 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import AboutMe from './components/AboutMe';
 import Particles from "react-particles-js"
 
 function App() {
   return (
     <>
       <Particles
-      className="particles-canvas"
+        className="particles-canvas"
         params={{
           particles: {
             number: {
@@ -30,6 +31,7 @@ function App() {
       />
       <Navbar />
       <Header />
+      <AboutMe />
     </>
   );
 }
