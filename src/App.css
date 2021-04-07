@@ -10,9 +10,10 @@
 }
 
 body {
-  font-family: "Roboto Condesed", sans-serif;
-  
+  font-family: "Roboto Condesend", sans-serif !important;
+
 }
+
 /*************************** NAVBAR ***********************************/
 
 nav {
@@ -82,13 +83,13 @@ nav ul li {
   height: 87.2vh;
 }
 
-.header-about {
+/*.header-about {
   position: relative;
   background: url(altumcode-dMUt0X3f59Q-unsplash.jpg) no-repeat fixed;
   background-size: cover;
   background-position: center;
   height: 105vh;
-}
+}*/
 
 .main-about {
   display: flex;
@@ -167,7 +168,7 @@ nav ul li {
 
 .tsparticles-canvas-el {
   position: absolute;
-  height: 100vh;
+  height: 87.2vh;
   width: 100vw;
   z-index: 1;
 }
@@ -175,5 +176,33 @@ nav ul li {
 @media(max-width: 768px) {
   .particles-canvas {
     display: none;
+  }
+}
+
+
+/*************************** About Me ***********************************/
+.photo-wrap {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.profile-img {
+  width: 18rem;
+  border-radius: 50%;
+  padding: .2rem;
+  border: 3px solid var(--primary-blue);
+}
+
+.about-heading {
+  color: var(--primary-blue);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 13rem;
+    display:  block; margin-left: auto; margin-right: auto;
   }
 }

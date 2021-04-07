@@ -1,14 +1,37 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Routes from './routes'
-import HeaderAbout from './pages/About-me/HeaderAbout';
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import AboutMe from './components/AboutMe';
+import Particles from "react-particles-js"
 
 function App() {
   return (
     <>
-      <Routes />
-      <HeaderAbout />
-      
+      <Particles
+        className="particles-canvas"
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 6,
+                color: "#04BDFB"
+              }
+            }
+          }
+        }}
+      />
+      <Navbar />
+      <Header />
+      <AboutMe />
     </>
   );
 }
